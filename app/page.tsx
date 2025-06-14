@@ -346,7 +346,7 @@ export default function Home() {
         {/* Empty State */}
         {!results && !loading && (
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-2xl shadow-lg p-12">
+            <div className="bg-white rounded-2xl shadow-lg p-6">
               <div className="text-6xl mb-6">🔍</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Ready to Find Local Services?
