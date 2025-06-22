@@ -64,14 +64,15 @@ export default function Home() {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Try: 'Who are the best-rated dishwasher repair technicians in San Francisco'"
-                className="w-full px-6 py-4 text-lg text-gray-900 rounded-2xl border-2 border-gray-200 focus:border-blue-500 focus:outline-none shadow-lg"
-                disabled={loading}
+                placeholder="Find the best plumbers near me"
+                className="w-full px-6 py-4 pr-32 text-lg text-gray-900 rounded-2xl border-2 border-gray-200 focus:border-blue-500 focus:outline-none shadow-lg
+    [::placeholder]:text-ellipsis [::placeholder]:whitespace-nowrap [::placeholder]:overflow-hidden"
               />
+
               <button
                 type="submit"
                 disabled={loading || !query.trim()}
-                className="absolute right-2 top-2 px-8 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+                className="absolute right-5 top-3 px-8 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
               >
                 {loading ? (
                   <div className="flex items-center space-x-2">
