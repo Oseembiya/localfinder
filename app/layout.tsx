@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "LocalFinder",
   description:
     "This application helps users to find and explore places or information. when someone visits the site, they can search for local service provider or any information they need. ",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
